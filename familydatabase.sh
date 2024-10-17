@@ -17,7 +17,7 @@ echo -e "Family member's relation to you --> \c"
 read RELATION
 echo -e "Family member's telephone number --> \c"
 read PHONE
-echo "$NAME\t$RELATION\t$PHONE" >> database
+echo -e "$NAME\t$RELATION\t$PHONE" >> database
 ;;
 
 s|S ) echo "What word would you like to look for? --> \c"
