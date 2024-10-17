@@ -4,10 +4,10 @@
 echo -e "What directory do you want to back up?-->\c"
 read ANS
 
-echo "Performing backup....."
+echo -e "Performing backup....."
 sleep 3
 FILE='echo $ANS | sed s#/#-#g'
 DATE='date +%F'
 tar -zcvf ~/backup-$FILE-$DATE.tar.gz $ANS
 
-echo "Backup performed to ~/backup-$FILE-$DATE.tar.gz"
+echo -e "Backup performed to ~/backup-$FILE-$DATE.tar.gz"
