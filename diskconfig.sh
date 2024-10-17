@@ -2,7 +2,7 @@
 #This script creates a report of our disk configuration
 
 FILENAME='hostname'
-echo "Disk report saved to $FILENAME.report"
+echo -e "Disk report saved to $FILENAME.report"
 
 echo -e "\n LVM Configuration: \n\n" >>$FILENAME.report
 lvscan >>$FILENAME.report
